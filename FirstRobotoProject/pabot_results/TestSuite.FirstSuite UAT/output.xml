@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180529 12:17:22.262" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="C:\Automation\EclipseWorkSpace\FirstRobotoProject\TestSuite" id="s1" name="TestSuite">
+<suite source="C:\Automation\EclipseWorkSpace\FirstRobotoProject\TestSuite\FirstSuite_UAT.robot" id="s1-s1" name="FirstSuite UAT">
+<kw type="setup" name="initalize(QA1)" library="ckKeywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Initalized</arg>
+</arguments>
+<status status="PASS" endtime="20180529 12:17:22.657" starttime="20180529 12:17:22.656"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${Env}</arg>
+<arg>${lEnv}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:22.658" level="INFO">${Env} = QA1</msg>
+<status status="PASS" endtime="20180529 12:17:22.658" starttime="20180529 12:17:22.657"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20180529 12:17:22.658" starttime="20180529 12:17:22.658"></status>
+</kw>
+<status status="PASS" endtime="20180529 12:17:22.659" starttime="20180529 12:17:22.655"></status>
+</kw>
+<test id="s1-s1-t1" name="test1">
+<kw name="openCK" library="ckKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${${Env}_URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:22.661" level="INFO">Opening browser 'chrome' to base url 'https://qa1.learn.cisco/'.</msg>
+<status status="PASS" endtime="20180529 12:17:30.210" starttime="20180529 12:17:22.661"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180529 12:17:31.443" starttime="20180529 12:17:30.210"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_EmailId}</arg>
+<arg>${${Env}_Login_Id}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:31.444" level="INFO">Typing text 'user10010@mailinator.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:31.923" starttime="20180529 12:17:31.443"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_Next}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:31.923" level="INFO">Clicking button '//*[@id="next"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:32.175" starttime="20180529 12:17:31.923"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_Password}</arg>
+<arg>${${Env}_Login_Pwd}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:32.176" level="INFO">Typing text 'Cisco@1234' into text field '//*[@name="password"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:34.859" starttime="20180529 12:17:32.175"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_SignIn}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:34.860" level="INFO">Clicking button '//*[@value="Sign In"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:35.312" starttime="20180529 12:17:34.859"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Home_Learning}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20180529 12:17:42.387" starttime="20180529 12:17:35.312"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180529 12:17:43.095" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180529 12:17:43.095" starttime="20180529 12:17:42.388"></status>
+</kw>
+<status status="PASS" endtime="20180529 12:17:43.095" starttime="20180529 12:17:22.660"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>test1</arg>
+</arguments>
+<status status="PASS" endtime="20180529 12:17:43.096" starttime="20180529 12:17:43.095"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180529 12:17:46.491" starttime="20180529 12:17:43.096"></status>
+</kw>
+<tags>
+<tag>High</tag>
+</tags>
+<status status="PASS" endtime="20180529 12:17:46.491" critical="yes" starttime="20180529 12:17:22.659"></status>
+</test>
+<test id="s1-s1-t2" name="test2">
+<kw name="openCK" library="ckKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${${Env}_URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:46.493" level="INFO">Opening browser 'chrome' to base url 'https://qa1.learn.cisco/'.</msg>
+<status status="PASS" endtime="20180529 12:17:52.466" starttime="20180529 12:17:46.492"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180529 12:17:53.626" starttime="20180529 12:17:52.467"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_EmailId}</arg>
+<arg>${${Env}_Login_Id}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:53.629" level="INFO">Typing text 'user10010@mailinator.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:54.000" starttime="20180529 12:17:53.627"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_Next}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:54.001" level="INFO">Clicking button '//*[@id="next"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:54.184" starttime="20180529 12:17:54.001"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_Password}</arg>
+<arg>${${Env}_Login_Pwd}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:54.185" level="INFO">Typing text 'Cisco@1234' into text field '//*[@name="password"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:56.593" starttime="20180529 12:17:54.184"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_SignIn}</arg>
+</arguments>
+<msg timestamp="20180529 12:17:56.594" level="INFO">Clicking button '//*[@value="Sign In"]'.</msg>
+<status status="PASS" endtime="20180529 12:17:56.830" starttime="20180529 12:17:56.593"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Home_Learning}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20180529 12:18:06.341" starttime="20180529 12:17:56.830"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180529 12:18:06.843" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180529 12:18:06.844" starttime="20180529 12:18:06.341"></status>
+</kw>
+<status status="PASS" endtime="20180529 12:18:06.844" starttime="20180529 12:17:46.492"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>test2</arg>
+</arguments>
+<status status="PASS" endtime="20180529 12:18:06.844" starttime="20180529 12:18:06.844"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180529 12:18:10.200" starttime="20180529 12:18:06.844"></status>
+</kw>
+<tags>
+<tag>Med</tag>
+</tags>
+<status status="PASS" endtime="20180529 12:18:10.200" critical="yes" starttime="20180529 12:17:46.491"></status>
+</test>
+<status status="PASS" endtime="20180529 12:18:10.203" starttime="20180529 12:17:22.315"></status>
+</suite>
+<status status="PASS" endtime="20180529 12:18:10.207" starttime="20180529 12:17:22.272"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">High</stat>
+<stat fail="0" pass="1">Med</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSuite" pass="2">TestSuite</stat>
+<stat fail="0" id="s1-s1" name="FirstSuite UAT" pass="2">TestSuite.FirstSuite UAT</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

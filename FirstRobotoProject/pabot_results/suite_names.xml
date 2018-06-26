@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180529 12:17:21.116" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="C:\Automation\EclipseWorkSpace\FirstRobotoProject\TestSuite" id="s1" name="TestSuite">
+<suite source="C:\Automation\EclipseWorkSpace\FirstRobotoProject\TestSuite\FirstSuite.robot" id="s1-s1" name="FirstSuite">
+<kw type="setup" name="initalize(QA2)" library="ckKeywords">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.444" starttime="20180529 12:17:21.443"></status>
+</kw>
+<status status="PASS" endtime="20180529 12:17:21.444" starttime="20180529 12:17:21.443"></status>
+</kw>
+<test id="s1-s1-t1" name="test1">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.445" starttime="20180529 12:17:21.445"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.445" starttime="20180529 12:17:21.445"></status>
+</kw>
+<tags>
+<tag>High</tag>
+</tags>
+<status status="PASS" endtime="20180529 12:17:21.445" critical="yes" starttime="20180529 12:17:21.444"></status>
+</test>
+<test id="s1-s1-t2" name="test2">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.447" starttime="20180529 12:17:21.447"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.447" starttime="20180529 12:17:21.447"></status>
+</kw>
+<tags>
+<tag>Med</tag>
+</tags>
+<status status="PASS" endtime="20180529 12:17:21.447" critical="yes" starttime="20180529 12:17:21.446"></status>
+</test>
+<status status="PASS" endtime="20180529 12:17:21.448" starttime="20180529 12:17:21.152"></status>
+</suite>
+<suite source="C:\Automation\EclipseWorkSpace\FirstRobotoProject\TestSuite\FirstSuite_UAT.robot" id="s1-s2" name="FirstSuite UAT">
+<kw type="setup" name="initalize(QA1)" library="ckKeywords">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.460" starttime="20180529 12:17:21.460"></status>
+</kw>
+<status status="PASS" endtime="20180529 12:17:21.461" starttime="20180529 12:17:21.460"></status>
+</kw>
+<test id="s1-s2-t1" name="test1">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.462" starttime="20180529 12:17:21.462"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.462" starttime="20180529 12:17:21.462"></status>
+</kw>
+<tags>
+<tag>High</tag>
+</tags>
+<status status="PASS" endtime="20180529 12:17:21.462" critical="yes" starttime="20180529 12:17:21.461"></status>
+</test>
+<test id="s1-s2-t2" name="test2">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.464" starttime="20180529 12:17:21.464"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180529 12:17:21.464" starttime="20180529 12:17:21.464"></status>
+</kw>
+<tags>
+<tag>Med</tag>
+</tags>
+<status status="PASS" endtime="20180529 12:17:21.464" critical="yes" starttime="20180529 12:17:21.463"></status>
+</test>
+<status status="PASS" endtime="20180529 12:17:21.465" starttime="20180529 12:17:21.450"></status>
+</suite>
+<status status="PASS" endtime="20180529 12:17:21.466" starttime="20180529 12:17:21.127"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="2">High</stat>
+<stat fail="0" pass="2">Med</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSuite" pass="4">TestSuite</stat>
+<stat fail="0" id="s1-s1" name="FirstSuite" pass="2">TestSuite.FirstSuite</stat>
+<stat fail="0" id="s1-s2" name="FirstSuite UAT" pass="2">TestSuite.FirstSuite UAT</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

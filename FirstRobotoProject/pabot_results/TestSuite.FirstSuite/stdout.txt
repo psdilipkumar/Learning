@@ -1,0 +1,21 @@
+==============================================================================
+TestSuite                                                                     
+==============================================================================
+TestSuite.FirstSuite                                                          
+==============================================================================
+Initalized
+test1                                                                 | FAIL |
+Button with locator '//*[@value="Sign In"]' not found.
+------------------------------------------------------------------------------
+test2                                                                 | FAIL |
+Button with locator '//*[@value="Sign In"]' not found.
+------------------------------------------------------------------------------
+TestSuite.FirstSuite                                                  | FAIL |
+2 critical tests, 0 passed, 2 failed
+2 tests total, 0 passed, 2 failed
+==============================================================================
+TestSuite                                                             | FAIL |
+2 critical tests, 0 passed, 2 failed
+2 tests total, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Automation\EclipseWorkSpace\FirstRobotoProject\pabot_results\TestSuite.FirstSuite\output.xml

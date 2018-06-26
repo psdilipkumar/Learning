@@ -1,0 +1,21 @@
+==============================================================================
+TestSuite                                                                     
+==============================================================================
+TestSuite.FirstSuite UAT                                                      
+==============================================================================
+Initalized
+test1                                                                 test1
+| PASS |
+------------------------------------------------------------------------------
+test2                                                                 test2
+| PASS |
+------------------------------------------------------------------------------
+TestSuite.FirstSuite UAT                                              | PASS |
+2 critical tests, 2 passed, 0 failed
+2 tests total, 2 passed, 0 failed
+==============================================================================
+TestSuite                                                             | PASS |
+2 critical tests, 2 passed, 0 failed
+2 tests total, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Automation\EclipseWorkSpace\FirstRobotoProject\pabot_results\TestSuite.FirstSuite UAT\output.xml
